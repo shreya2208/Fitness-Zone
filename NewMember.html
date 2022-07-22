@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Member Registartion</title>
+    <link rel="stylesheet" href="newMem.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="title">
+            New Member
+        </div>
+        <form action="NewMember.php" method="post">
+            <div class="form">
+
+                <div class="inputfield">
+                    <label>First Name</label>
+                    <input type="text" name="FirstName" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>Mobile Number</label>
+                    <input type="text" name="MobileNumber" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>Email</label>
+                    <input type="text" name="Email" class="input">
+                </div>
+
+                <div class="inputfield">
+                    <label>Gender</label>
+
+                    <input type="radio" name="Gender" value="Male"> &nbsp;Male
+                    &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                    <input type="radio" name="Gender" value="Female"> &nbsp;Female
+                </div>
+
+                <div class="inputfield">
+                    <label>Father Name</label>
+                    <input type="text" name="FatherName" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>Mother Name</label>
+                    <input type="text" name="MotherName" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>GYM time</label>
+
+                    <select id="gym" name="GYMTime">
+                        <option value="6to8am">6:00-8:00 AM</option>
+                        <option value="8to10am">8:00-10:00 AM</option>
+                        <option value="10to12pm">10:00-12:00 PM</option>
+                        <option value="5to7pm">5:00-7:00 PM</option>
+                        <option value="7to9pm">7:00-9:00 PM</option>
+                    </select>
+
+                </div>
+                <div class="inputfield">
+                    <label>Adhaar Number</label>
+                    <input type="text" name="AdhaarNumber" class="input">
+                </div>
+
+                <div class="inputfield">
+                    <label for="date">Date of Join:</label><br>
+                    <input type="date" id="DOJ" name="DOJ">
+                </div>
+
+                <div class="inputfield">
+                    <label>Age</label>
+                    <input type="text" name="Age" class="input">
+                </div>
+
+                <div class="btn-group" style="width:100%">
+                    <button name="Save" style="width:25%">Save</button>
+                    <button style="width:25%">Reset</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
